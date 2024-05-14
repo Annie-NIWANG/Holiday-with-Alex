@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang:en>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    
+    <title>Holiday with Alex(expanding cards)</title>
+    <!-- <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=0plGPg6JIFU5Fy6pEEa30RWrUJg3CfJonO8c_WyIawyaUTmHkkHvzh4O9rSkqVMMgwZ81rL__b5Nr-h8f7zv4n_LQKCGXuw79rVrB0Ie_Es" charset="UTF-8"></script> -->
+</head>
+
+<style>
+      /* *{box-sizing: border-box;
+    } */
+     body{
+        
+        display:flex; 
+        align-items: center; 
+        height:100vh;
+        overflow: hidden; 
+        margin:0; 
+    }
+   .container{
+    display:flex; 
+    width: 90vw; 
+   }
+   .panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 200px;
+    border-radius: 50px;
+    color:rgb(10, 9, 10);
+    flex:0.9;
+    cursor: pointer;
+    margin:20px;
+    position:relative;  
+    transition: all 0.8s ease-in;
+
+  }
+  .panel h3{
+    font: 40px bolder;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    margin:0;
+    opacity:0;
+  }
+   .panel.active{
+    flex:5;
+  } 
+
+  .panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+  } 
+  /* @media (max-width:480px){
+    
+    .container{
+      width:100vw
+    }
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5){
+      display:none;
+    }
+  } */
+
+
+</style> 
+
+<body>
+    <div  class="container">
+    <div class="panel active" style="background-image: url(images/holiday\ with\ alex.jpg);">
+        <h3>Holiday with Alex</h3>
+    </div>
+     <div class="panel " style="background-image: url(images/luna\ park.jpg);">
+        <h3>luna park</h3>
+    </div>
+    <div class="panel " style="background-image: url(images/myuna\ farm.jpg);">
+        
+        <h3>myuna farm</h3>
+    </div>
+    <div class="panel " style="background-image: url(images/picnic\ park.jpg);">
+        <h3>picnic park</h3>
+    </div>
+    <div class="panel " style="background-image: url(images/davinci\ show.jpg);">
+        <h3>davinci show</h3>
+    </div> 
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
